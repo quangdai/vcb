@@ -4,15 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACG</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
     <div id="app">
         <myheader></myheader>
     
         <main>
-    
+            <section class="slider-home">
+                <div class="container">
+                    <div class="inner-slider owl-carousel">
+                        <sliderhome></sliderhome>
+                        <sliderhome></sliderhome>
+                        <sliderhome></sliderhome>
+                        <sliderhome></sliderhome>
+                        <sliderhome></sliderhome>
+                        <sliderhome></sliderhome>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news-home">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                  <a class="nav-item nav-link active" id="khuyen-mai-tab" data-toggle="tab" href="#khuyen-mai" role="tab" aria-controls="khuyen-mai" aria-selected="true">Home</a>
+                                  <a class="nav-item nav-link" id="tin-tuc-tab" data-toggle="tab" href="#tin-tuc" role="tab" aria-controls="tin-tuc" aria-selected="false">Profile</a>
+                                  <a class="nav-item nav-link" id="mang-luoi-tab" data-toggle="tab" href="#mang-luoi" role="tab" aria-controls="mang-luoi" aria-selected="false">Contact</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="khuyen-mai" role="tabpanel" aria-labelledby="khuyen-mai-tab">1</div>
+                                <div class="tab-pane fade" id="tin-tuc" role="tabpanel" aria-labelledby="tin-tuc-tab">2</div>
+                                <div class="tab-pane fade" id="mang-luoi" role="tabpanel" aria-labelledby="mang-luoi-tab">3</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="login-ibanking">
+                                <h3>
+                                    Ngân hàng trực tuyến
+                                    <span>VCB - iB@nking</span>
+                                </h3>
+                                <div class="submit-login">
+                                    <a href="#" target="_blank"> <button>Đăng nhập</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     
         <myfooter></myfooter>
@@ -23,16 +68,18 @@
     
     <script>
         var app = new Vue({
-            el: '#contentall',
+            el: '#app',
             components: {
-                'myheader': httpVueLoader('header.vue'),
-                'myfooter': httpVueLoader('footer.vue'),
+                'myheader': httpVueLoader('vue_component/header.vue'),
+                'sliderhome': httpVueLoader('vue_component/slider-home.vue'),
+                'myfooter': httpVueLoader('vue_component/footer.vue'),
             },
         });
     </script>
 
     <script src="js/jquery-3.4.1.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-
+    
 </body>
 </html>
