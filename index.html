@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACG</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="app">
+        <myheader></myheader>
+    
+        <main>
+    
+        </main>
+    
+        <myfooter></myfooter>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    
+    <script>
+        var app = new Vue({
+            el: '#contentall',
+            components: {
+                'myheader': httpVueLoader('header.vue'),
+                'myfooter': httpVueLoader('footer.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
