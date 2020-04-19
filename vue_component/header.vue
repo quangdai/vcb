@@ -34,7 +34,7 @@
                     <button class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </form>
                 <a href="#" class="language">
-                    <img src="images/ic_en" alt="">
+                    <img src="images/ic_en.png" alt="">
                 </a>
             </div>
         </div>
@@ -54,6 +54,116 @@
                             KHÁCH HÀNG CÁ NHÂN
                             <i class="fa fa-caret-down" aria-hidden="true"></i>
                         </a>
+                        <div class="mega-menu">
+                            <ul class="main-menu-mega">
+                                <li class="menu-mega-item">
+                                    <a href="#" class="link">
+                                        <img src="images/ic-chuong-trinh-khuyen-mai.png" alt="">
+                                        <span>Chương trình khuyến mãi</span>
+                                    </a>
+                                    <ul class="main-sub-mega">
+                                        <li class="sub-mega-item">
+                                            <a href="#" class="mega-link">
+                                                <img src="images/" alt="">
+                                                <span>
+                                                    Dịch vụ tài khoản
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-mega-item">
+                                            <a href="#" class="mega-link">
+                                                <img src="images/" alt="">
+                                                <span>
+                                                    Dịch vụ tiết kiệm
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-mega-item">
+                                            <a href="#" class="mega-link">
+                                                <img src="images/" alt="">
+                                                <span>
+                                                    Dịch vụ ngân hàng điện tử
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-mega-item">
+                                            <a href="#" class="mega-link">
+                                                <img src="images/" alt="">
+                                                <span>
+                                                    Dịch vụ Bancassurance
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-mega-item">
+                                            <a href="#" class="mega-link">
+                                                <img src="images/" alt="">
+                                                <span>
+                                                    Dịch vụ thẻ
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-mega-item">
+                                            <a href="#" class="mega-link">
+                                                <img src="images/" alt="">
+                                                <span>
+                                                    Dịch vụ cho vay cá nhân
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="sub-mega-item">
+                                            <a href="#" class="mega-link">
+                                                <img src="images/" alt="">
+                                                <span>
+                                                    Dịch vụ chuyển và nhận tiền
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-mega-item">
+                                    <a href="#" class="link">
+                                        <img src="images/ic-the-atm.png" alt="">
+                                        <span>Thẻ</span>
+                                    </a>
+                                </li>
+                                <li class="menu-mega-item">
+                                    <a href="#" class="link">
+                                        <img src="images/ic-tai-khoan-va-tiet-kiem.png" alt="">
+                                        <span>Tài khoản & tiết kiệm</span>
+                                    </a>
+                                </li>
+                                <li class="menu-mega-item">
+                                    <a href="#" class="link">
+                                        <img src="images/ic-cho-vay-ca-nhan.png" alt="">
+                                        <span>Cho vay cá nhân</span>
+                                    </a>
+                                </li>
+                                <li class="menu-mega-item">
+                                    <a href="#" class="link">
+                                        <img src="images/ic-chuyen-va-nhan-tien.png" alt="">
+                                        <span>Chuyển & nhận tiền</span>
+                                    </a>
+                                </li>
+                                <li class="menu-mega-item">
+                                    <a href="#" class="link">
+                                        <img src="images/ic-ngan-hang-dien-tu.png" alt="">
+                                        <span>Ngân hàng điện tử</span>
+                                    </a>
+                                </li>
+                                <li class="menu-mega-item">
+                                    <a href="#" class="link">
+                                        <img src="images/ic-bancassurance.png" alt="">
+                                        <span>Bancassurance</span>
+                                    </a>
+                                </li>
+                                <li class="menu-mega-item">
+                                    <a href="#" class="link">
+                                        <img src="images/ic-dau-tu.png" alt="">
+                                        <span>Đầu tư</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="menu-item">
                         <a href="#" class="menu-link">
@@ -79,8 +189,10 @@
                 <span class="icon">
                     <img src="images/ic_hotline.png" alt="">
                 </span>
-                <span class="text-1">Dịch vụ khách hàng 24/7</span>
-                <b class="text-2">1900 54 54 13</b>
+                <p>
+                    <span class="text-1">Dịch vụ khách hàng 24/7</span>
+                    <b class="text-2">1900 54 54 13</b>
+                </p>
             </a>
         </div>
     </header>
