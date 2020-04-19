@@ -3039,38 +3039,6 @@
   clip: auto;
 }
 
-@font-face {
-  font-family: 'Kuro';
-  src: url(../fonts/kuro/Kuro-Regular.eot);
-  src: url("../fonts/kuro/Kuro-Regular.eot?#iehack") format("eot"), url("../fonts/kuro/Kuro-Regular.woff") format("woff"), url("../fonts/kuro/Kuro-Regular.ttf") format("truetype"), url("../fonts/kuro/Kuro-Regular.svg#svgFontName") format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Kuro';
-  src: url(../fonts/kuro/Kuro-Bold.eot);
-  src: url("../fonts/kuro/Kuro-Bold.eot?#iehack") format("eot"), url("../fonts/kuro/Kuro-Bold.woff") format("woff"), url("../fonts/kuro/Kuro-Bold.ttf") format("truetype"), url("../fonts/kuro/Kuro-Bold.svg#svgFontName") format("svg");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Kuro';
-  src: url(../fonts/kuro/Kuro-Light.eot);
-  src: url("../fonts/kuro/Kuro-Light.eot?#iehack") format("eot"), url("../fonts/kuro/Kuro-Light.woff") format("woff"), url("../fonts/kuro/Kuro-Light.ttf") format("truetype"), url("../fonts/kuro/Kuro-Light.svg#svgFontName") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Kuro';
-  src: url(../fonts/kuro/Kuro-Medium.eot);
-  src: url("../fonts/kuro/Kuro-Medium.eot?#iehack") format("eot"), url("../fonts/kuro/Kuro-Medium.woff") format("woff"), url("../fonts/kuro/Kuro-Medium.ttf") format("truetype"), url("../fonts/kuro/Kuro-Medium.svg#svgFontName") format("svg");
-  font-weight: 600;
-  font-style: normal;
-}
-
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
