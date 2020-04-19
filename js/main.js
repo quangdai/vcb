@@ -40,10 +40,10 @@ $(window).bind("load", function() {
  $('#nav-tab a').on('click', function (e) {
     e.preventDefault()
     $(this).tab('show')
-  })
+})
 
 
-
+$('.dropdown-toggle').dropdown()
 
 
 //   =======================

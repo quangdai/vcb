@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khách hàng tổ chức</title>
     
+    <!-- thêm cái này để gọi font -->
+    <link rel="stylesheet" href="fonts/kuro/kuro.css">
+
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="category-khtc category">
+<body class="category-parent category">
     <div id="app-khtc">
         <myheader></myheader>
         <main>
@@ -44,7 +47,10 @@
                                 </div>
                                 <div class="content-category">
                                     <div class="row">
-                                        <article></article>
+                                        <articlecat></articlecat>
+                                        <articlecat></articlecat>
+                                        <articlecat></articlecat>
+                                        <articlecat></articlecat>
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +74,7 @@
                 'listcat': httpVueLoader('vue_component/listcat.vue'),
                 'ibanking': httpVueLoader('vue_component/ibanking.vue'),
                 'listtool': httpVueLoader('vue_component/listtool.vue'),
-                'article': httpVueLoader('vue_component/article.vue'),
+                'articlecat': httpVueLoader('vue_component/articlecat.vue'),
                 'myfooter': httpVueLoader('vue_component/footer.vue'),
             },
         });
