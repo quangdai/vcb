@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACG</title>
+    <title>Home</title>
     
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
@@ -14,12 +14,9 @@
         <myheader></myheader>
     
         <main>
-            <section class="slider-home">
+            <section class="slider-home slider">
                 <div class="container">
                     <div class="inner-slider owl-carousel">
-                        <sliderhome></sliderhome>
-                        <sliderhome></sliderhome>
-                        <sliderhome></sliderhome>
                         <sliderhome></sliderhome>
                         <sliderhome></sliderhome>
                         <sliderhome></sliderhome>
@@ -33,45 +30,46 @@
                         <div class="col-lg-9">
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                  <a class="nav-item nav-link active" id="khuyen-mai-tab" data-toggle="tab" href="#khuyen-mai" role="tab" aria-controls="khuyen-mai" aria-selected="true">Home</a>
-                                  <a class="nav-item nav-link" id="tin-tuc-tab" data-toggle="tab" href="#tin-tuc" role="tab" aria-controls="tin-tuc" aria-selected="false">Profile</a>
-                                  <a class="nav-item nav-link" id="mang-luoi-tab" data-toggle="tab" href="#mang-luoi" role="tab" aria-controls="mang-luoi" aria-selected="false">Contact</a>
+                                  <a class="nav-item nav-link active" id="khuyen-mai-tab" data-toggle="tab" href="#khuyen-mai" role="tab" aria-controls="khuyen-mai" aria-selected="true">Khuyến mãi</a>
+                                  <a class="nav-item nav-link" id="tin-tuc-tab" data-toggle="tab" href="#tin-tuc" role="tab" aria-controls="tin-tuc" aria-selected="false">Tin tức & Sự kiện</a>
+                                  <a class="nav-item nav-link" id="mang-luoi-tab" data-toggle="tab" href="#mang-luoi" role="tab" aria-controls="mang-luoi" aria-selected="false">Mạng lưới</a>
                                 </div>
                             </nav>
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="khuyen-mai" role="tabpanel" aria-labelledby="khuyen-mai-tab">
-                                    <div class="inner-tab">
+                                    <div class="inner-tab row">
                                         <blogitem></blogitem>
                                         <blogitem></blogitem>
                                         <blogitem></blogitem>
+                                    </div>
+                                    <div class="read-more">
+                                        <a href="#">Xem thêm >></a>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="tin-tuc" role="tabpanel" aria-labelledby="tin-tuc-tab">
-                                    <div class="inner-tab">
+                                    <div class="inner-tab row">
                                         <blogitem></blogitem>
                                         <blogitem></blogitem>
                                         <blogitem></blogitem>
                                     </div>
+                                    <div class="read-more">
+                                        <a href="#">Xem thêm >></a>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="mang-luoi" role="tabpanel" aria-labelledby="mang-luoi-tab">
-                                    <div class="inner-tab">
+                                    <div class="inner-tab row">
                                         <blogitem></blogitem>
                                         <blogitem></blogitem>
                                         <blogitem></blogitem>
+                                    </div>
+                                    <div class="read-more">
+                                        <a href="#">Xem thêm >></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="login-ibanking">
-                                <h3>
-                                    Ngân hàng trực tuyến
-                                    <span>VCB - iB@nking</span>
-                                </h3>
-                                <div class="submit-login">
-                                    <a href="#" target="_blank"> <button>Đăng nhập</button></a>
-                                </div>
-                            </div>
+                            <ibanking></ibanking>
                         </div>
                     </div>
                 </div>
@@ -79,28 +77,26 @@
 
             <section class="ty-gia">
                 <div class="container">
-                    <nav>
-                        <div class="nav nav-tabs" id="gia-tab" role="tablist">
-                          <a class="nav-item nav-link active" id="ty-gia-tab" data-toggle="tab" href="#ty-gia" role="tab" aria-controls="ty-gia" aria-selected="true">Tỷ giá</a>
-                          <a class="nav-item nav-link" id="lai-suat-tab" data-toggle="tab" href="#lai-suat" role="tab" aria-controls="lai-suat" aria-selected="false">Lãi suất</a>
-                        </div>
-                    </nav>
+                    <div class="nav nav-tabs" id="gia-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="ty-gia-tab" data-toggle="tab" href="#ty-gia" role="tab" aria-controls="ty-gia" aria-selected="true">Tỷ giá</a>
+                        <a class="nav-item nav-link" id="lai-suat-tab" data-toggle="tab" href="#lai-suat" role="tab" aria-controls="lai-suat" aria-selected="false">Lãi suất</a>
+                    </div>
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="ty-gia" role="tabpanel" aria-labelledby="ty-gia-tab">
-                            <ul class="inner-tab-tg">
+                            <ul class="inner-tab-tg owl-carousel">
+                                <li>AUD <span>21,355.50</span></li>
+                                <li>VND <span>21,355.50</span></li>
                                 <li>AUD <span>21,355.50</span></li>
                                 <li>AUD <span>21,355.50</span></li>
                                 <li>AUD <span>21,355.50</span></li>
                                 <li>AUD <span>21,355.50</span></li>
                                 <li>AUD <span>21,355.50</span></li>
                                 <li>AUD <span>21,355.50</span></li>
-                                <li>AUD <span>21,355.50</span></li>
-                                <li>AUD <span>21,355.50</span></li>
-                                <li>AUD <span>21,355.50</span></li>
+                                <li>VND <span>21,355.50</span></li>
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="lai-suat" role="tabpanel" aria-labelledby="lai-suat-tab">
-                            <ul class="inner-tab-tg">
+                            <ul class="inner-tab-tg owl-carousel">
                                 <li>AUD <span>21,355.50</span></li>
                                 <li>EUR <span>21,355.50</span></li>
                                 <li>USD <span>21,355.50</span></li>
@@ -131,6 +127,7 @@
                 'myheader': httpVueLoader('vue_component/header.vue'),
                 'sliderhome': httpVueLoader('vue_component/slider-home.vue'),
                 'blogitem': httpVueLoader('vue_component/blog-item.vue'),
+                'ibanking': httpVueLoader('vue_component/ibanking.vue'),
                 'myfooter': httpVueLoader('vue_component/footer.vue'),
             },
         });
