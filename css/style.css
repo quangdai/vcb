@@ -3039,324 +3039,36 @@
   clip: auto;
 }
 
-/* cyrillic-ext */
 @font-face {
-  font-family: 'Arimo';
-  font-style: italic;
+  font-family: 'Kuro';
+  src: url(../fonts/kuro/Kuro-Regular.eot);
+  src: url("../fonts/kuro/Kuro-Regular.eot?#iehack") format("eot"), url("../fonts/kuro/Kuro-Regular.woff") format("woff"), url("../fonts/kuro/Kuro-Regular.ttf") format("truetype"), url("../fonts/kuro/Kuro-Regular.svg#svgFontName") format("svg");
   font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Italic"), local("Arimo-Italic"), url(../fonts/arimo/P5sCzZCDf9_T_10c9C5kiK-u.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Italic"), local("Arimo-Italic"), url(../fonts/arimo/P5sCzZCDf9_T_10c9CdkiK-u.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* greek-ext */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Italic"), local("Arimo-Italic"), url(../fonts/arimo/P5sCzZCDf9_T_10c9C9kiK-u.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-/* greek */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Italic"), local("Arimo-Italic"), url(../fonts/arimo/P5sCzZCDf9_T_10c9CBkiK-u.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-/* hebrew */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Italic"), local("Arimo-Italic"), url(../fonts/arimo/P5sCzZCDf9_T_10c9CFkiK-u.woff2) format("woff2");
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-
-/* vietnamese */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Italic"), local("Arimo-Italic"), url(../fonts/arimo/P5sCzZCDf9_T_10c9CxkiK-u.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Italic"), local("Arimo-Italic"), url(../fonts/arimo/P5sCzZCDf9_T_10c9C1kiK-u.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Italic"), local("Arimo-Italic"), url(../fonts/arimo/P5sCzZCDf9_T_10c9CNkiA.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold Italic"), local("Arimo-BoldItalic"), url(../fonts/arimo/P5sHzZCDf9_T_10c_JhBnZ2P1OE2.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold Italic"), local("Arimo-BoldItalic"), url(../fonts/arimo/P5sHzZCDf9_T_10c_JhBnZSP1OE2.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* greek-ext */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold Italic"), local("Arimo-BoldItalic"), url(../fonts/arimo/P5sHzZCDf9_T_10c_JhBnZyP1OE2.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-/* greek */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold Italic"), local("Arimo-BoldItalic"), url(../fonts/arimo/P5sHzZCDf9_T_10c_JhBnZOP1OE2.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-/* hebrew */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold Italic"), local("Arimo-BoldItalic"), url(../fonts/arimo/P5sHzZCDf9_T_10c_JhBnZKP1OE2.woff2) format("woff2");
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-
-/* vietnamese */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold Italic"), local("Arimo-BoldItalic"), url(../fonts/arimo/P5sHzZCDf9_T_10c_JhBnZ-P1OE2.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold Italic"), local("Arimo-BoldItalic"), url(../fonts/arimo/P5sHzZCDf9_T_10c_JhBnZ6P1OE2.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Arimo';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold Italic"), local("Arimo-BoldItalic"), url(../fonts/arimo/P5sHzZCDf9_T_10c_JhBnZCP1A.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Arimo';
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Regular"), local("Arimo-Regular"), url(../fonts/arimo/P5sMzZCDf9_T_10UxCF8jA.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
-/* cyrillic */
 @font-face {
-  font-family: 'Arimo';
+  font-family: 'Kuro';
+  src: url(../fonts/kuro/Kuro-Bold.eot);
+  src: url("../fonts/kuro/Kuro-Bold.eot?#iehack") format("eot"), url("../fonts/kuro/Kuro-Bold.woff") format("woff"), url("../fonts/kuro/Kuro-Bold.ttf") format("truetype"), url("../fonts/kuro/Kuro-Bold.svg#svgFontName") format("svg");
+  font-weight: bold;
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Regular"), local("Arimo-Regular"), url(../fonts/arimo/P5sMzZCDf9_T_10dxCF8jA.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
-/* greek-ext */
 @font-face {
-  font-family: 'Arimo';
+  font-family: 'Kuro';
+  src: url(../fonts/kuro/Kuro-Light.eot);
+  src: url("../fonts/kuro/Kuro-Light.eot?#iehack") format("eot"), url("../fonts/kuro/Kuro-Light.woff") format("woff"), url("../fonts/kuro/Kuro-Light.ttf") format("truetype"), url("../fonts/kuro/Kuro-Light.svg#svgFontName") format("svg");
+  font-weight: 300;
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Regular"), local("Arimo-Regular"), url(../fonts/arimo/P5sMzZCDf9_T_10VxCF8jA.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
 }
 
-/* greek */
 @font-face {
-  font-family: 'Arimo';
+  font-family: 'Kuro';
+  src: url(../fonts/kuro/Kuro-Medium.eot);
+  src: url("../fonts/kuro/Kuro-Medium.eot?#iehack") format("eot"), url("../fonts/kuro/Kuro-Medium.woff") format("woff"), url("../fonts/kuro/Kuro-Medium.ttf") format("truetype"), url("../fonts/kuro/Kuro-Medium.svg#svgFontName") format("svg");
+  font-weight: 600;
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Regular"), local("Arimo-Regular"), url(../fonts/arimo/P5sMzZCDf9_T_10axCF8jA.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-/* hebrew */
-@font-face {
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Regular"), local("Arimo-Regular"), url(../fonts/arimo/P5sMzZCDf9_T_10bxCF8jA.woff2) format("woff2");
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-
-/* vietnamese */
-@font-face {
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Regular"), local("Arimo-Regular"), url(../fonts/arimo/P5sMzZCDf9_T_10WxCF8jA.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Regular"), local("Arimo-Regular"), url(../fonts/arimo/P5sMzZCDf9_T_10XxCF8jA.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Arimo Regular"), local("Arimo-Regular"), url(../fonts/arimo/P5sMzZCDf9_T_10ZxCE.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold"), local("Arimo-Bold"), url(../fonts/arimo/P5sBzZCDf9_T_1Wi4TROrZKX0A.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-@font-face {
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold"), local("Arimo-Bold"), url(../fonts/arimo/P5sBzZCDf9_T_1Wi4TRHrZKX0A.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* greek-ext */
-@font-face {
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold"), local("Arimo-Bold"), url(../fonts/arimo/P5sBzZCDf9_T_1Wi4TRPrZKX0A.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-/* greek */
-@font-face {
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold"), local("Arimo-Bold"), url(../fonts/arimo/P5sBzZCDf9_T_1Wi4TRArZKX0A.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-/* hebrew */
-@font-face {
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold"), local("Arimo-Bold"), url(../fonts/arimo/P5sBzZCDf9_T_1Wi4TRBrZKX0A.woff2) format("woff2");
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-
-/* vietnamese */
-@font-face {
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold"), local("Arimo-Bold"), url(../fonts/arimo/P5sBzZCDf9_T_1Wi4TRMrZKX0A.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold"), local("Arimo-Bold"), url(../fonts/arimo/P5sBzZCDf9_T_1Wi4TRNrZKX0A.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Arimo';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Arimo Bold"), local("Arimo-Bold"), url(../fonts/arimo/P5sBzZCDf9_T_1Wi4TRDrZI.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /*!
@@ -15593,6 +15305,374 @@ footer .ft-col-1 .ft-title {
   footer .ft-col .ft-title {
     margin-top: 15px;
     margin-bottom: 5px;
+  }
+}
+
+a {
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+a:hover {
+  color: #005030;
+}
+
+button:focus {
+  outline: none;
+}
+
+main section {
+  margin-bottom: 20px;
+  width: 100%;
+  float: left;
+}
+
+.slider .inner-slider {
+  position: relative;
+}
+
+.slider .inner-slider .item {
+  position: relative;
+}
+
+.slider .inner-slider .item .text-slider {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background-color: rgba(130, 188, 0, 0.6);
+  color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 4px rgba(102, 102, 102, 0.42);
+          box-shadow: 2px 2px 4px rgba(102, 102, 102, 0.42);
+  float: left;
+  max-height: 300px;
+  padding: 35px 20px;
+  z-index: 98;
+  max-width: 505px;
+  font-family: 'Kuro';
+}
+
+.slider .inner-slider .item .text-slider h2 {
+  font-weight: bold;
+  font-size: 43px;
+  margin-bottom: 0;
+}
+
+.slider .inner-slider .item .text-slider h4 {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.slider .inner-slider .item .text-slider p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.slider .inner-slider .owl-dots {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+}
+
+.slider .inner-slider .owl-dots button {
+  background: rgba(255, 255, 255, 0.7);
+  width: 13px;
+  height: 13px;
+  margin-left: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.slider .inner-slider .owl-dots button.active, .slider .inner-slider .owl-dots button:hover {
+  background: #82BC00;
+  border: 1px solid #fff;
+}
+
+.slider .inner-slider .owl-dots button:focus {
+  outline: none;
+}
+
+.login-ibanking {
+  padding: 15px;
+  width: 100%;
+  float: left;
+  min-height: 175px;
+  background-color: #d1e6b6;
+  border-radius: 5px;
+  font-family: 'Kuro';
+  margin-top: 35px;
+}
+
+.login-ibanking h3 {
+  text-align: left;
+  color: #333;
+  display: block;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.login-ibanking h3 span {
+  color: #005030;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.login-ibanking .submit-login {
+  text-align: center;
+}
+
+.login-ibanking .submit-login button {
+  text-align: center;
+  background: #005030;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+  margin-left: 0;
+  width: 214px;
+  height: 55px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'Kuro';
+}
+
+.login-ibanking .submit-login button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+section.news-home .row {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+section.news-home .row .col-lg-9, section.news-home .row .col-lg-3, section.news-home .row .col-lg-4 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+section.news-home .row .item-blog {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+section.news-home .row .item-blog img {
+  max-width: 100%;
+}
+
+section.news-home .row .item-blog ul {
+  padding: 0;
+  padding-left: 20px;
+}
+
+section.news-home .row .item-blog ul li {
+  font-size: 15px;
+  margin: 8px 0 5px;
+  color: #404041;
+  list-style: disc;
+}
+
+section.news-home .row .item-blog ul li:hover {
+  color: #005030;
+}
+
+section.news-home .row .read-more {
+  text-align: right;
+  margin-top: 10px;
+}
+
+section.news-home .row .read-more a {
+  font-size: 13px;
+  color: #144733;
+}
+
+section.news-home .row .read-more a:hover {
+  color: #000;
+}
+
+.nav-tabs {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #154734;
+}
+
+.nav-tabs .nav-item {
+  background: #fff;
+  font-size: 15px;
+  font-family: 'Myriad Pro';
+  color: #404041 !important;
+  border: 1px solid #6D6E70;
+  border-radius: 8px 8px 0 0;
+  width: 175px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-tabs .nav-item.active, .nav-tabs .nav-item:hover {
+  background: #144633;
+  color: #fff !important;
+  border-color: #144633;
+}
+
+section.ty-gia #gia-tab {
+  margin-bottom: 0;
+  border: none;
+  float: left;
+  width: 150px;
+}
+
+section.ty-gia #gia-tab .nav-item {
+  width: auto;
+  padding: 8px 15px 3px;
+  height: 35px;
+}
+
+section.ty-gia .tab-pane {
+  float: left;
+  width: calc(100% - 150px);
+  height: 35px;
+  line-height: 35px;
+}
+
+section.ty-gia .tab-pane ul {
+  margin-bottom: 0;
+  padding: 0 0 0 15px;
+}
+
+section.ty-gia .tab-pane ul li {
+  font-size: 15px;
+}
+
+section.ty-gia .tab-pane ul li span {
+  color: #144733;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.category .inner-slider .item .text-slider {
+  background-color: rgba(147, 57, 148, 0.6);
+}
+
+.category .inner-slider .item .text-slider h2 {
+  text-transform: uppercase;
+  padding-right: 60px;
+  font-size: 39px;
+  margin-bottom: 8px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+  color: #000;
+}
+
+.widget {
+  margin-bottom: 20px;
+  margin-top: 0;
+  width: 100%;
+  float: left;
+}
+
+.widget .widget-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2E1342;
+  border: 1px solid #2E1342;
+  border-radius: 5px;
+  padding: 12px 15px 8px;
+  margin-bottom: 10px;
+}
+
+.widget .widget-content ul {
+  padding: 0;
+}
+
+.widget .widget-content ul li {
+  width: 100%;
+  float: left;
+}
+
+.widget .widget-content ul li a {
+  color: #000;
+  font-size: 15px;
+  border-bottom: 1px solid #BDBEC0;
+  padding: 10px 15px;
+  width: 100%;
+  float: left;
+}
+
+.widget .widget-content ul li a:hover {
+  color: #005030;
+}
+
+.category-khtc .login-ibanking {
+  background-color: rgba(147, 57, 148, 0.4);
+}
+
+.category-khtc .login-ibanking h3 span {
+  color: #2E1342;
+}
+
+.category-khtc .login-ibanking .submit-login button {
+  background: #2E1342;
+}
+
+.category-khtc .login-ibanking .submit-login button:hover {
+  background: #005030;
+}
+
+.widget-tool {
+  border: 1px solid #2E1342;
+  border-radius: 5px;
+}
+
+.widget-tool .widget-title {
+  border: none;
+  border-bottom: 1px solid #BDBEC0;
+  border-radius: 0;
+}
+
+.widget-tool .widget-content {
+  width: 100%;
+  float: left;
+  padding: 0 15px;
+}
+
+.widget-tool .widget-content ul li a {
+  padding: 10px 0;
+}
+
+.widget-tool .widget-content ul li:last-child a {
+  border: none;
+}
+
+ol.breadcrumb {
+  border: none;
+  background: none;
+}
+
+ol.breadcrumb a {
+  color: #000;
+  font-size: 15px;
+}
+
+ol.breadcrumb .breadcrumb-item.active {
+  color: #933994;
+  font-weight: bold;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1230px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

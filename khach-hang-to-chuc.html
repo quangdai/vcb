@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khách hàng tổ chức</title>
+    
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="category-khtc category">
+    <div id="app-khtc">
+        <myheader></myheader>
+        <main>
+            <section class="slider-khtc slider">
+                <div class="container">
+                    <div class="inner-slider owl-carousel">
+                        <slider></slider>
+                        <slider></slider>
+                        <slider></slider>
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <aside>
+                                <listcat></listcat>
+                                <ibanking></ibanking>
+                                <listtool></listtool>
+                            </aside>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="main-content">
+                                <div class="beadcrumbs">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                          <li class="breadcrumb-item"><a href="index.html">Vietcombank</a></li>
+                                          <li class="breadcrumb-item active" aria-current="page">Khách hàng tổ chức</li>
+                                        </ol>
+                                    </nav>    
+                                </div>
+                                <div class="content-category">
+                                    <div class="row">
+                                        <article></article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <myfooter></myfooter>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script>
+        var app = new Vue({
+            el: '#app-khtc',
+            components: {
+                'myheader': httpVueLoader('vue_component/header.vue'),
+                'slider': httpVueLoader('vue_component/slider.vue'),
+                'sidebar': httpVueLoader('vue_component/sidebar.vue'),
+                'listcat': httpVueLoader('vue_component/listcat.vue'),
+                'ibanking': httpVueLoader('vue_component/ibanking.vue'),
+                'listtool': httpVueLoader('vue_component/listtool.vue'),
+                'article': httpVueLoader('vue_component/article.vue'),
+                'myfooter': httpVueLoader('vue_component/footer.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
