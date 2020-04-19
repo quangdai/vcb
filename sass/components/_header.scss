@@ -102,7 +102,7 @@
             .text-1{
                 display: block;
                 font-size: 12px;
-                font-weight: 500;
+                font-weight: 600;
                 color: $theme;
                 white-space: nowrap;
             }
@@ -130,7 +130,7 @@
             .menu-link{
                 white-space: nowrap;
                 color: #414042;
-                font-weight: 500;
+                font-weight: 600;
                 text-transform: uppercase;
                 font-size: 15px;
                 letter-spacing: -1.5px;
@@ -144,17 +144,21 @@
                 i{
                     margin-left: 18px;
                 }
-                &::before{
-                    content: '';
-                    border-left: 15px solid transparent;
-                    border-right: 15px solid transparent;
-                    border-bottom: 17px solid #154734;
-                    position: absolute;
-                    top: 60px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    transition: 0.3s all;
-                    opacity: 0;
+            }
+            &.has-sub{
+                .menu-link{
+                    &::before{
+                        content: '';
+                        border-left: 15px solid transparent;
+                        border-right: 15px solid transparent;
+                        border-bottom: 17px solid #154734;
+                        position: absolute;
+                        top: 60px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        transition: 0.3s all 0.3s;
+                        opacity: 0;
+                    }
                 }
             }
         }
@@ -172,25 +176,15 @@
         padding-right: 10px;
         .main-menu-mega{
             padding-left: 0;
-            @extend .d-flex, .align-items-start, .justify-content-around;
+            @extend .d-flex, .justify-content-around;
             .menu-mega-item{
                 @include col-w(80px);
                 .link{
                     text-align: center;
                     position: relative;
+                    height: 100%;
+                    z-index: 12;
                     @extend .d-flex, .flex-column, .justify-content-center, .align-items-center;
-                    &::before{
-                        content: '';
-                        border-left: 15px solid transparent;
-                        border-right: 15px solid transparent;
-                        border-top: 17px solid #154734;
-                        position: absolute;
-                        top: 60px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        transition: 0.3s all;
-                        opacity: 0;
-                    }
                     img{
                         display: inline-block;
                         -webkit-box-flex: 0;
@@ -204,10 +198,26 @@
                     }
                     span{
                         font-size: 15px;
-                        font-weight: 500;
                         color: #fff;
                         display: block;
                         letter-spacing: -0.6px;
+                    }
+                }
+                &.has-sub{
+                    .link{
+                        &::before{
+                            content: '';
+                            border-left: 12px solid transparent;
+                            border-right: 12px solid transparent;
+                            border-top: 12px solid #154734;
+                            position: absolute;
+                            top: calc(100% + 0px);
+                            left: 50%;
+                            transform: translateX(-50%);
+                            transition: 0.3s all;
+                            opacity: 0;
+                            z-index: 1;
+                        }
                     }
                 }
             }
@@ -219,13 +229,32 @@
         width: 100%;
         left: 0;
         background-color: rgba(209, 211, 212, 0.95);
+        padding-left: 0;
+        padding: 15px 40px;
+        @extend .d-flex, .flex-wrap;
         .sub-mega-item{
+            @include col-w(calc(25% - 40px));
+            border-bottom: 1px solid #58585B;
+            margin-right: 40px;
+            padding-bottom: 7px;
+            margin-bottom: 20px;
+            &:hover{
+                box-shadow: 0px 1px 0 0px #58585B;
+                span{
+                    font-size: 15px;
+                    color: #404041;
+                    text-shadow: 0 0 1px #404041;
+                }
+            }
             .mega-link{
                 img{
-
+                    max-width: 33px;
+                    object-fit: scale-down;
+                    margin-right: 15px;
                 }
                 span{
-
+                    font-size: 15px;
+                    color: #404041;
                 }
             }
         }
@@ -242,7 +271,7 @@
                         display: block;
                         top: 40px;
                         opacity: 1;
-                        transition: 0.3s all;
+                        transition: 0.3s all 0.2s;
                     }
                 }
             }
@@ -253,9 +282,10 @@
             .menu-mega-item:hover{
                 .link::before{
                     display: block;
-                    top: 40px;
+                    top: calc(100% + 18px);
                     opacity: 1;
                     transition: 0.3s all;
+                    z-index: 11;
                 }
                 img{
                     transform: scale(0.95);
@@ -263,6 +293,35 @@
                     filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.3));
                 }
             }
+        }
+    }
+    .mega-menu{
+        transform: translateY(60px);
+        opacity: 0;
+        z-index: -99;
+        transition: 0.3s opacity 0.3s, 0.3s transform 0.3s, 0.3s z-index 0.3s;
+        &.active{
+            transform: translateY(0px);
+            z-index: 11;
+            opacity: 1;
+            transition: 0.3s opacity, 0.3s transform;
+        }
+    }
+    .animate-menu{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+
+        transform: translateY(60px);
+        opacity: 0;
+        z-index: -99;
+        transition: 0.3s opacity, 0.3s transform;
+        &.active{
+            transform: translateY(0px);
+            z-index: 11;
+            opacity: 1;
+            transition: 0.3s opacity, 0.3s transform;
         }
     }
 }

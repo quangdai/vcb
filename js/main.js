@@ -41,3 +41,28 @@ $(window).bind("load", function() {
     e.preventDefault()
     $(this).tab('show')
   })
+
+
+
+
+
+//   =======================
+
+$(document).ready(function() {
+    $(".menu-item").hover(
+        function() {
+            $(this).children('.mega-menu').stop(true, true).addClass('active');
+        },
+        function() {
+            $(this).children('.mega-menu').stop(true, true).removeClass('active');
+        }
+    );
+    $(".menu-mega-item").hover(
+        function() {
+            $(this).children('.animate-menu').stop(true, true).addClass('active');
+        },
+        function() {
+            $(this).children('.animate-menu').stop(true, true).removeClass('active');
+        }
+    );
+});
