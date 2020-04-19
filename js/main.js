@@ -41,3 +41,7 @@ $(window).bind("load", function() {
     e.preventDefault()
     $(this).tab('show')
   })
+
+//
+
+$('.dropdown-toggle').dropdown()
