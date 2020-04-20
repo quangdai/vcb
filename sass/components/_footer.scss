@@ -1,0 +1,203 @@
+footer{
+    border-top: 2px solid #144633;
+    background-color: #144633;
+    color: #fff;
+    .ft-control{
+        background-color: #fff;
+        padding: 10px;
+        a{
+            font-size: 15px;
+            color: #000;
+            font-weight: 500;
+        }
+        .go-to-top{
+            margin-left: auto;
+        }
+    }
+    .footer-link{
+        .footer-link-title{
+            font-size: 15px;
+            font-weight: 500;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .list-link{
+            padding: 0;
+            .link-item{
+                .link{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #fff;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0%;
+                        border-bottom: 1px solid #fff;
+                        transition: 0.3s all;
+                    }
+                    &:hover{
+                        &::before{
+                            width: 100%;
+                            transition: 0.3s all;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .box-link-icon{
+        padding: 20px 0 10px;
+        border-bottom: 2px solid #82BC00;
+        margin-bottom: 15px;
+    }
+    .box-list-link{
+        padding-bottom: 20px;
+        background-image: url('../images/bg-footer.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    .support-chat{
+        a{
+            font-size: 15px;
+            font-weight: 500;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+
+    .icon{
+        background-image: url('../images/ic_footer.png');
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        margin-right: 2px;
+        vertical-align: -5px;
+    }
+    .ic_phone{
+        background-position: -24px -34px;
+    }
+    .ic_email{
+        background-position: -24px -53px;
+    }
+    .ic_atm{
+        background-position: -95px -33px;
+    }
+    .ic_vcb{
+        background-position: -95px -51px;
+    }
+    .ic_location{
+        background-position: -94px -67px;
+    }
+    .ic_ty-gia{
+        background-position: -189px -33px;
+    }
+    .ic_lai-xuat{
+        background-position: -189px -51px;
+    }
+    .ic_bieu-phi{
+        background-position: -190px -67px;
+    }
+    .ic_bieu-mau{
+        background-position: -265px -43px;
+    }
+    .ic_chuyen-doi-ngoai-te{
+        background-position: -335px -40px;
+    }
+    .ic_lich{
+        background-position: -336px -56px;
+    }
+    .ic_tinh-lai{
+        background-position: -332px -75px;
+    }
+    .ic_chat{
+        width: 44px;
+        height: 44px;
+        display: block;
+        background-position: -402px -21px;
+        margin: 5px 55px;
+    }
+
+    .ft-bot{
+        background-color: #fff;
+        padding: 10px 0;
+        .menu-link-ft{
+            @extend .d-flex, .flex-wrap;
+            padding-left: 0;
+            font-size: 15px;
+            font-weight: 500;
+            max-width: 60%;
+            li{
+                &:not(:last-child()){
+                    &::after{
+                        content: '|';
+                        margin: 0 8px;
+                        color: #404041;
+                        font-size: 16px;
+                    }
+                }
+            }
+            a{
+                color: #404041;
+            }
+        }
+        .social-link{
+            @extend .d-flex, .align-items-center;
+            margin-left: auto;
+            h5{
+                padding-left: 0;
+                font-size: 15px;
+                font-weight: 500;
+                color: #404041;
+                margin-bottom: 0;
+            }
+            .social-link{
+                a{
+                    width: 32px;
+                    height: 32px;
+                    line-height: 32px;
+                    text-align: center;
+                    color: #404041;
+                    border: 1px solid #404041;
+                    border-radius: 3px;
+                    display: inline-block;
+                    margin: 0 5px;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px){
+    footer{
+        .box-link-icon{
+            .list-link{
+                display: none;
+            }
+        }
+        .box-list-link{
+            
+        }
+        .support-chat{
+            a{
+                border-radius: 3px;
+                margin-left: auto;
+                border: 1px solid #fff;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                max-width: 225px;
+                .ic_chat{
+                    margin: 7px 10px;
+                }
+            }
+        }
+    }
+}
