@@ -25,15 +25,59 @@ $(window).bind("load", function() {
             600:{
                 items:3
             },
-            1000:{
-                items:5
+            768:{
+                items:4
             },
             1024:{
+                items:5
+            }
+            ,
+            1200:{
                 items:7
             }
         }
     })
  });
+ $(window).bind("load", function() {
+    if(window.innerWidth < 1025 && window.innerWidth > 767 ){
+        $('.tab-content .inner-tab ').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            dots:false,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                568:{
+                    items:2, 
+                    nav:true,
+                    autoplay:false,
+                },
+                768:{
+                    items:3, 
+                    nav:true,
+                    autoplay:false,
+                },
+                1024:{
+                    items:3,
+                    nav:true,
+                }
+            }
+        })
+    }
+ });
+ 
+//
+ $(document).ready( function() {
+    if(window.innerWidth <  1025 && window.innerWidth > 767 ){
+        $('.news-home .inner-tab').addClass( 'owl-carousel' );
+    }
+  } );
 
  // Tab home
 
@@ -42,9 +86,17 @@ $(window).bind("load", function() {
     $(this).tab('show')
 })
 
+//
 
-$('.dropdown-toggle').dropdown()
+$(window).bind('load', function(){
+    $(".multi-cat li.has-child i").on('click', function(){
+        $(this).siblings(".sub-cat").toggle(200);
+    });
 
+    $(".sub-cat li.has-child i").on('click', function(){
+        $(this).siblings(".sub-cat-child").toggle(200);
+    });
+});
 
 //   =======================
 
@@ -87,4 +139,5 @@ $(document).ready(function() {
     $('.btn-log').click(function(){
         $('.log-vcb ul').slideToggle(100);
     });
+
 });

@@ -1,6 +1,5 @@
 <template>
-    <div class="item">
-        <img src="../images/img-slider.jpg" alt="Image slider">
+    <div class="item" style="background-image:url('../images/img-slider.jpg');">
         <div class="text-slider">
             <h2>VCB-Mobile B@nking</h2>
             <h4>Ngân hàng trên điện thoại di động</h4>

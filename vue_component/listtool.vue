@@ -3,10 +3,11 @@
         <div class="widget-title">Công cụ & Tiện ích</div>
         <div class="widget-content">
             <ul>
-                <li><a href="#">Định chế tài chính</a></li>
-                <li><a href="#">Khách hàng Doanh nghiệp</a></li>
-                <li><a href="#">Doanh nghiệp SMEs</a></li>
-                <li><a href="#">Dịch vụ thẻ</a></li>
+                <li class="tygia"><a href="#">Tỷ giá</a></li>
+                <li class="laisuat"><a href="#">Lãi suất</a></li>
+                <li class="bieuphi"><a href="#">Biểu phí</a></li>
+                <li class="bieumau"><a href="#">Biểu mẫu</a></li>
+                <li class="mangluoi"><a href="#">Mạng lưới</a></li>
             </ul>
         </div>
     </div>
