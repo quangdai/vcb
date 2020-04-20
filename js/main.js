@@ -42,6 +42,10 @@ $(window).bind("load", function() {
     $(this).tab('show')
   })
 
-//
+// Js dropdown list category
 
-$('.dropdown-toggle').dropdown()
+$(document).ready(function(){
+    $("button").click(function(){
+      $("p").toggle();
+    });
+});

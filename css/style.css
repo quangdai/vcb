@@ -15592,7 +15592,7 @@ aside .widget ul li {
   position: relative;
 }
 
-aside .widget ul li.has-child::after {
+aside .widget ul li.has-child .arrow::before {
   content: "\f107";
   font-family: 'fontawesome';
   display: block;
