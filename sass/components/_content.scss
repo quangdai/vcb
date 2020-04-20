@@ -287,15 +287,15 @@ aside .widget ul {
         width: 100%;
         float: left;
         li a {
-            padding: 10px 15px 10px 25px;
+            padding: 10px 10px 10px 28px;
         }
         li::before {
             content: '\f111';
             font-family: fontawesome;
             position: absolute;
             line-height: 40px;
-            font-size: 8px;
-            left: 8px;
+            font-size: 6px;
+            left: 15px;
         }
         ul.sub-cat-child {
             // padding-left: 10px;
@@ -303,10 +303,10 @@ aside .widget ul {
             width: 100%;
             float: left;
             li a {
-                padding: 10px 15px 10px 35px;
+                padding: 10px 10px 10px 38px;
             }
             li::before {
-                left: 20px;
+                left: 25px;
             }
         }
     }
@@ -321,7 +321,8 @@ aside .widget ul {
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            line-height: 40px;
+            line-height: 43px;
+            font-size: 20px;
         }
     }
     li.has-child .click-dr {

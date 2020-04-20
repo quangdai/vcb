@@ -86,7 +86,7 @@ $(window).bind("load", function() {
     $(this).tab('show')
 })
 
-//
+// List category
 
 $(window).bind('load', function(){
     $(".multi-cat li.has-child i").on('click', function(){

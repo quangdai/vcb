@@ -16270,7 +16270,7 @@ aside .widget ul ul.sub-cat {
 }
 
 aside .widget ul ul.sub-cat li a {
-  padding: 10px 15px 10px 25px;
+  padding: 10px 10px 10px 28px;
 }
 
 aside .widget ul ul.sub-cat li::before {
@@ -16278,8 +16278,8 @@ aside .widget ul ul.sub-cat li::before {
   font-family: fontawesome;
   position: absolute;
   line-height: 40px;
-  font-size: 8px;
-  left: 8px;
+  font-size: 6px;
+  left: 15px;
 }
 
 aside .widget ul ul.sub-cat ul.sub-cat-child {
@@ -16289,11 +16289,11 @@ aside .widget ul ul.sub-cat ul.sub-cat-child {
 }
 
 aside .widget ul ul.sub-cat ul.sub-cat-child li a {
-  padding: 10px 15px 10px 35px;
+  padding: 10px 10px 10px 38px;
 }
 
 aside .widget ul ul.sub-cat ul.sub-cat-child li::before {
-  left: 20px;
+  left: 25px;
 }
 
 aside .widget ul li {
@@ -16315,7 +16315,8 @@ aside .widget ul li i {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  line-height: 40px;
+  line-height: 43px;
+  font-size: 20px;
 }
 
 aside .widget ul li.has-child .click-dr {
