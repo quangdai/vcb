@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tín dụng doanh nghiệp</title>
+    
+    <link rel="stylesheet" href="fonts/kuro/kuro.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="category-child category-khtc category">
+    <div id="app-child">
+        <myheader></myheader>
+        <main>
+            <section class="banner-header">
+                <div class="container">
+                    <div class="inner-banner">
+                        <bannerheader></bannerheader>
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <aside>
+                                <listcat-multi></listcat-multi>
+                                <ibanking></ibanking>
+                                <listtool></listtool>
+                            </aside>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="main-content">
+                                <div class="beadcrumbs">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                          <li class="breadcrumb-item"><a href="index.html">Vietcombank</a></li>
+                                          <li class="breadcrumb-item"><a href="khach-hang-to-chuc.html">Khách hàng tổ chức</a></li>
+                                          <li class="breadcrumb-item"><a href="doanh-nghiep-smes.html">Doanh nghiệp SMEs</a></li>
+                                          <li class="breadcrumb-item active" aria-current="page">Tín dụng doanh nghiệp</li>
+                                        </ol>
+                                      </nav> 
+                                </div>
+                                <div class="content-category">
+                                    <div class="row">
+                                        <articlechild></articlechild>
+                                        <articlechild></articlechild>
+                                        <articlechild></articlechild>
+                                        <articlechild></articlechild>
+                                        <articlechild></articlechild>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <myfooter></myfooter>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script>
+        var app = new Vue({
+            el: '#app-child',
+            components: {
+                'myheader': httpVueLoader('vue_component/header.vue'),
+                'bannerheader': httpVueLoader('vue_component/bannerheader.vue'),
+                'sidebar': httpVueLoader('vue_component/sidebar.vue'),
+                'listcat-multi': httpVueLoader('vue_component/listcat-multi.vue'),
+                'ibanking': httpVueLoader('vue_component/ibanking.vue'),
+                'listtool': httpVueLoader('vue_component/listtool.vue'),
+                'articlechild': httpVueLoader('vue_component/articlechild.vue'),
+                'myfooter': httpVueLoader('vue_component/footer.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

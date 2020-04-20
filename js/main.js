@@ -43,9 +43,3 @@ $(window).bind("load", function() {
   })
 
 // Js dropdown list category
-
-$(document).ready(function(){
-    $("button").click(function(){
-      $("p").toggle();
-    });
-});
