@@ -1,5 +1,5 @@
 <template>
-    <div class="col-xs-12 col-md-6 col-lg-3 col-auto-clear">
+    <div class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 col-auto-clear">
         <article>
             <div class="cat-parent">
                 <a href="#">
