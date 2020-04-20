@@ -1,3 +1,7 @@
+header{
+    position: relative;
+    z-index: 111;
+}
 .header{
     @extend .d-flex, .d-xl-block, .flex-row-reverse, .align-items-center;
     .top-bar{
