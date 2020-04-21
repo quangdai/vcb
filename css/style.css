@@ -17378,6 +17378,9 @@ footer .ft-bot .social-list-link .social-link a {
 
 @media (max-width: 767px) {
   footer {
+    background-image: url(../images/bg-footer.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
     background-color: transparent;
     border-top: 0;
   }
@@ -17434,6 +17437,10 @@ footer .ft-bot .social-list-link .social-link a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+  footer .ft-bot .menu-link-ft li {
+    width: 100%;
+    text-align: center;
   }
   footer .ft-bot .menu-link-ft li:not(:last-child)::after {
     display: none;
