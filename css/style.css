@@ -16818,6 +16818,10 @@ section.news-home .inner-tab .owl-nav button.owl-next:hover {
           transform: rotate(0);
 }
 
+main img {
+  max-width: 100%;
+}
+
 @media (min-width: 1300px) {
   .container {
     max-width: 1230px !important;
