@@ -19,9 +19,11 @@
                         <div class="row">
                             <div class="col-12 col-md-6 col-xl-3">
                                 <div class="footer-link">
-                                    <h5 class="footer-link-title">
-                                        LIÊN HỆ
-                                    </h5>
+                                    <a href="#">
+                                        <h5 class="footer-link-title">
+                                            LIÊN HỆ
+                                        </h5>
+                                    </a>
                                     <ul class="list-link">
                                         <li class="link-item">
                                             <a href="" class="link">
@@ -40,9 +42,11 @@
                             </div>
                             <div class="col-12 col-md-6 col-xl-3">
                                 <div class="footer-link">
-                                    <h5 class="footer-link-title">
-                                        TÌM VIETCOMBANK
-                                    </h5>
+                                    <a href="#">
+                                        <h5 class="footer-link-title">
+                                            TÌM VIETCOMBANK
+                                        </h5>
+                                    </a>
                                     <ul class="list-link">
                                         <li class="link-item">
                                             <a href="" class="link">
@@ -67,9 +71,11 @@
                             </div>
                             <div class="col-12 col-md-6 col-xl-3">
                                 <div class="footer-link">
-                                    <h5 class="footer-link-title">
-                                        THÔNG TIN NGÂN HÀNG
-                                    </h5>
+                                    <a href="#">
+                                        <h5 class="footer-link-title">
+                                            THÔNG TIN NGÂN HÀNG
+                                        </h5>
+                                    </a>
                                     <ul class="list-link">
                                         <li class="link-item">
                                             <a href="" class="link">
@@ -100,9 +106,11 @@
                             </div>
                             <div class="col-12 col-md-6 col-xl-3">
                                 <div class="footer-link">
-                                    <h5 class="footer-link-title">
-                                        CÔNG CỤ TÍNH TOÁN
-                                    </h5>
+                                    <a href="#">
+                                        <h5 class="footer-link-title">
+                                            CÔNG CỤ TÍNH TOÁN
+                                        </h5>
+                                    </a>
                                     <ul class="list-link">
                                         <li class="link-item">
                                             <a href="" class="link">
@@ -327,7 +335,7 @@
             </div>
         </div>
         <div class="ft-bot">
-            <div class="container d-flex align-items-center">
+            <div class="container d-flex align-items-center flex-column-reverse flex-md-row">
                 <ul class="menu-link-ft">
                     <li>
                         <a href="#">
@@ -365,7 +373,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="social-link">
+                <ul class="social-list-link">
                     <li>
                         <h5>Hãy kết nối với chúng tôi</h5>
                     </li>
