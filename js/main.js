@@ -96,7 +96,18 @@ $(window).bind('load', function(){
     $(".sub-cat li.has-child i").on('click', function(){
         $(this).siblings(".sub-cat-child").toggle(200);
     });
+    $('li.has-child i').click( function(){
+        if ( $(this).hasClass('active') ) {
+            $(this).removeClass('active');
+        } else {
+            $('li.has-child i.active').removeClass('active');
+            $(this).addClass('active');    
+        }
+    });    
 });
+
+//
+
 
 //   =======================
 
