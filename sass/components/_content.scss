@@ -324,6 +324,9 @@ aside .widget ul {
             line-height: 43px;
             font-size: 20px;
         }
+        .fa-angle-down.active::before {
+            content: '\f106';
+        }
     }
     li.has-child .click-dr {
         display: inline-block;

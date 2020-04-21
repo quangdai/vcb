@@ -16319,6 +16319,10 @@ aside .widget ul li i {
   font-size: 20px;
 }
 
+aside .widget ul li .fa-angle-down.active::before {
+  content: '\f106';
+}
+
 aside .widget ul li.has-child .click-dr {
   display: inline-block;
   position: absolute;
