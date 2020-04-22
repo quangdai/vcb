@@ -13,6 +13,13 @@ footer{
         .go-to-top{
             margin-left: auto;
         }
+        .expand-footer{
+            &.active{
+                i{
+                    transform: rotateZ(180deg);
+                }
+            }
+        }
     }
     .footer-link{
         .footer-link-title{
@@ -172,6 +179,19 @@ footer{
         }
     }
 }
+.category-khtc{
+    footer{
+        background-color: #2E1342;
+        border-top: 2px solid #2E1342;
+    }
+}
+.category-khut{
+    footer{
+        background-color: #542E1A;
+        border-top: 2px solid #542E1A;
+    }
+}
+
 
 @media (max-width: 1199px){
     footer{
