@@ -722,6 +722,10 @@ section.news-home .inner-tab {
 main img {
     max-width: 100%;
 }
+.content-category .list-post {
+    border-top: 1px dotted #000;
+    padding-top: 10px;
+} 
 
 @media(min-width: 1300px) {
     .container {
