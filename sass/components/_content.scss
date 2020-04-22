@@ -719,7 +719,9 @@ section.news-home .inner-tab {
         transform: rotate(0);
     }
 }
-
+main img {
+    max-width: 100%;
+}
 
 @media(min-width: 1300px) {
     .container {
