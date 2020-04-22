@@ -244,7 +244,7 @@ footer{
         background-image: url(../images/bg-footer.png);
         background-position: bottom center;
         background-repeat: no-repeat;
-        background-color: transparent;
+        background-color: transparent !important;
         border-top: 0;
         .box-list-link, .ft-control{
             display: none;
