@@ -39,7 +39,7 @@ $(window).bind("load", function() {
     })
  });
  $(window).bind("load", function() {
-    if(window.innerWidth < 1025 && window.innerWidth > 767 ){
+    if(window.innerWidth < 1025 && window.innerWidth > 480 ){
         $('.tab-content .inner-tab ').owlCarousel({
             loop:true,
             margin:10,
@@ -53,7 +53,7 @@ $(window).bind("load", function() {
                 0:{
                     items:1
                 },
-                568:{
+                480:{
                     items:2, 
                     nav:true,
                     autoplay:false,
@@ -161,4 +161,10 @@ $(window).bind('load', function(){
         $('.toggle-footer').slideToggle(300);
         $(this).toggleClass('active');
     });
+    $('.link-top .control a').on('click', function(){
+        $(this).parents('.link-top').toggleClass('active');
+    });
+    $(window).bind('scroll', function(){
+        $('.link-top').removeClass('active');
+    })
 });
