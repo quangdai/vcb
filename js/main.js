@@ -1,7 +1,7 @@
 // js slider home
 $(window).bind("load", function() {
     $('.slider .inner-slider').owlCarousel({
-        loop:true,
+        loop:false,
         margin:10,
         nav:false,
         items:1
@@ -96,6 +96,7 @@ $(window).bind('load', function(){
     $(".sub-cat li.has-child i").on('click', function(){
         $(this).siblings(".sub-cat-child").toggle(200);
     });
+
     $('li.has-child i').click( function(){
         if ( $(this).hasClass('active') ) {
             $(this).removeClass('active');
@@ -103,11 +104,15 @@ $(window).bind('load', function(){
             $('li.has-child i.active').removeClass('active');
             $(this).addClass('active');    
         }
-    });    
+    });
+    
+    // the 
+    $('.multi-the li.has-child').click(function(){
+        $('.multi-the li.has-child').removeClass('open');
+        $(this).addClass('open');
+    });
+
 });
-
-//
-
 
 //   =======================
 
