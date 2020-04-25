@@ -198,6 +198,27 @@ footer{
         .box-link-icon{
             .list-link{
                 display: none;
+                padding-bottom: 20px;
+            }
+            .footer-link-title{
+                &.active{
+                    &::before{
+                        transform: rotateZ(-180deg);
+                    }
+                }
+                &::before{
+                    content: "\f107";
+                    display: inline-block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    font-size: inherit;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    position: absolute;
+                    right: 20px;
+                    color: #fff;
+                    font-size: 18px;
+                }
             }
         }
         .support-chat{

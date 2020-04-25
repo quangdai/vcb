@@ -17599,6 +17599,24 @@ footer .ft-bot .social-list-link .social-link a {
 @media (max-width: 1199px) {
   footer .box-link-icon .list-link {
     display: none;
+    padding-bottom: 20px;
+  }
+  footer .box-link-icon .footer-link-title.active::before {
+    -webkit-transform: rotateZ(-180deg);
+            transform: rotateZ(-180deg);
+  }
+  footer .box-link-icon .footer-link-title::before {
+    content: "\f107";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    font-size: 18px;
   }
   footer .support-chat a {
     border-radius: 3px;
