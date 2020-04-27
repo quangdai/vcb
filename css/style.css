@@ -14915,6 +14915,11 @@ body {
   font-weight: normal;
   font-size: 14px;
   overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .line-though {
@@ -15868,7 +15873,6 @@ i.rotate {
   }
   header {
     position: relative;
-    overflow: hidden;
   }
   header::before {
     content: '';
@@ -16004,7 +16008,7 @@ i.rotate {
   .header .main-sub-mega {
     position: relative;
     padding: 0;
-    margin-top: 10px;
+    margin-top: 0px;
     background-color: #fff;
   }
   .header .main-sub-mega .sub-mega-item {
@@ -16148,9 +16152,30 @@ i.rotate {
   }
 }
 
-@media (max-width: 576px) {
-  header.container {
+@media (max-width: 575px) {
+  header {
     padding: 0;
+  }
+  header .container {
+    padding: 0;
+  }
+  .header .header-main .menu-bar {
+    margin-right: 10px;
+  }
+  .header .header-main .logo {
+    padding-left: 0;
+  }
+  .header .top-bar .right .language {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .header .menu-wrap {
+    width: 260px;
+  }
+  .header .header-main .overlay-mobile::before {
+    left: 268px;
   }
 }
 
@@ -16258,7 +16283,7 @@ main section {
   padding: 15px;
   width: 100%;
   float: left;
-  min-height: 195px;
+  min-height: 180px;
   background-color: #d1e6b6;
   border-radius: 5px;
   font-family: 'Kuro';
@@ -16279,15 +16304,17 @@ main section {
   text-align: left;
   color: #58585B;
   display: block;
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 5px;
   letter-spacing: -1px;
+  font-weight: 600;
 }
 
 .login-ibanking h3 span {
   color: #005030;
-  font-size: 35px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
 }
 
 .login-ibanking .submit-login {
@@ -16295,18 +16322,19 @@ main section {
 }
 
 .login-ibanking .submit-login button {
-  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
   background: #005030;
+  width: 70%;
+  border: none;
   border-radius: 5px;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: bold;
   margin-top: 10px;
   border: none;
   margin-left: 0;
-  width: 214px;
-  height: 55px;
-  color: #fff;
-  font-size: 22px;
-  text-transform: uppercase;
-  cursor: pointer;
+  height: 40px;
 }
 
 .login-ibanking .submit-login button:hover {
@@ -16328,26 +16356,32 @@ section.news-home .row .item-blog {
   border-radius: 5px;
   padding: 5px;
   background-color: #fff;
+  position: relative;
 }
 
 section.news-home .row .item-blog img {
-  max-width: 100%;
+  width: 100%;
+  height: 156px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-section.news-home .row .item-blog ul {
-  padding-left: 20px;
-}
-
-section.news-home .row .item-blog ul li {
+section.news-home .row .item-blog .title {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
   font-size: 15px;
-  margin: 8px 0 5px;
+  padding: 7px 12px;
+  margin: 0;
   color: #404041;
   list-style: disc;
   font-weight: 600;
   line-height: normal;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-section.news-home .row .item-blog ul li:hover {
+section.news-home .row .item-blog .title:hover {
   color: #005030;
 }
 
@@ -17761,18 +17795,6 @@ main img {
     float: left;
     margin-bottom: 10px;
   }
-  section.news-home .row .item-blog img {
-    max-width: 40%;
-    float: left;
-  }
-  section.news-home .row .item-blog ul {
-    float: left;
-    width: 60%;
-    padding-left: 30px;
-  }
-  section.news-home .row .item-blog ul li {
-    margin: 0;
-  }
   section.news-home .row .read-more {
     display: block;
     text-align: center;
@@ -18064,17 +18086,18 @@ footer .ft-bot .social-list-link .social-link a {
   footer .footer-link .footer-link-title {
     color: #404041;
   }
-  footer .footer-link .footer-link-title::after {
-    content: "\f105";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    float: right;
-    padding: 0px 6px;
-    font-size: 20px;
+  footer .footer-link .footer-link-title::before {
+    color: #404041;
+  }
+  footer .footer-link .list-link {
+    margin-top: 5px;
+    padding-left: 8px;
+  }
+  footer .footer-link .list-link .link-item {
+    padding: 5px 0;
+  }
+  footer .footer-link .list-link .link-item .link {
+    color: #404041;
   }
   footer .box-link-icon {
     border-bottom: 0;

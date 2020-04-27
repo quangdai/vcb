@@ -573,7 +573,6 @@ i.rotate{
     }
     header{
         position: relative;
-        overflow: hidden;
         &::before{
             content: '';
             background-color: #fff;
@@ -707,7 +706,7 @@ i.rotate{
         .main-sub-mega{
             position: relative;
             padding: 0;
-            margin-top: 10px;
+            margin-top: 0px;
             background-color: #fff;
             .sub-mega-item{
                 max-width: 100%;
@@ -854,8 +853,28 @@ i.rotate{
     }
 }
 
-@media(max-width: 576px){
-    header.container{
+@media(max-width: 575px){
+    header{
         padding: 0;
+        .container{
+            padding: 0;
+        }
+    }
+    .header .header-main .menu-bar{
+        margin-right: 10px;
+    }
+    .header .header-main .logo{
+        padding-left: 0;
+    }
+    .header .top-bar .right .language{
+        padding-right: 0;
+    }
+}
+@media(max-width: 575px){
+    .header .menu-wrap{
+        width: 260px;
+    }
+    .header .header-main .overlay-mobile::before{
+        left: 268px;
     }
 }

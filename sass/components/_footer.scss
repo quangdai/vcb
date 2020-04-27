@@ -270,21 +270,24 @@ footer{
         .box-list-link, .ft-control{
             display: none;
         }
-        .footer-link .footer-link-title{
-            color: #404041;
-            &::after{
-                content: "\f105";
-                display: inline-block;
-                font: normal normal normal 14px/1 FontAwesome;
-                font-size: inherit;
-                text-rendering: auto;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                float: right;
-                padding: 0px 6px;
-                font-size: 20px;
+        .footer-link{
+            .footer-link-title{
+                color: #404041;
+                &::before{
+                    color: #404041;
+                }
             }
-        }
+            .list-link{
+                margin-top: 5px;
+                padding-left: 8px;
+                .link-item{
+                    padding: 5px 0;
+                    .link{
+                        color: #404041;
+                    }
+                } 
+            }
+        } 
         .box-link-icon{
             border-bottom: 0;
         }
