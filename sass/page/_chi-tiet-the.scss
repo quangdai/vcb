@@ -1,0 +1,72 @@
+.chi-tiet-the{
+    .box-tab-details{
+        line-height: 1.4;
+        font-weight: bold;
+        padding: 5px 0px;
+        font-size: 20px;
+        color: #444;
+        margin: 0;
+        margin-top: -10px;
+    }
+    .time{
+        color: #969696;
+        font-size: 12px;
+    }
+    .toglle-accordion{
+        padding: 1px 20px;
+        background: #fff;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        .card{
+            border: 1px solid #bbb;
+            border-radius: 10px;
+            margin: 20px 0px;
+            padding: 0px 10px;
+            &:nth-child(2n){
+                background-color: #f7f7f7;
+            }
+            .card-header{
+                padding: 0;
+                background-color: transparent;
+                border-bottom: 0;
+                button{
+                    display: block;
+                    color: #005030;
+                    margin: 0px;
+                    padding: 10px 10px;
+                    padding-right: 30px;
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-align: left;
+                    margin-bottom: -1px;
+                    text-decoration: none !important;
+                    white-space: inherit;
+                    position: relative;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                    .icon{
+                        display: inline-block;
+                        width: 23px;
+                        height: 23px;
+                        background: url('../images/icon_hide_show_green.png') no-repeat scroll right 0px bottom 0px;
+                        float: right;
+                        position: absolute;
+                        right: 0;
+                        top: 12px;
+                    }
+                    &:not(.collapsed){
+                        .icon{
+                            background-position: right 0px bottom -53px;
+                        }
+                    }
+                }
+            }
+            .card-body{
+                border-top: 1px dashed #bbb;
+            }
+        }
+    }
+}
