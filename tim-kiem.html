@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm kiếm tin tức</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="fonts/kuro/kuro.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style_new.css">
+</head>
+<body class="search">
+    <div id="app" class="news-site">
+        <myheader></myheader>
+    
+        <main class="clearfix"> 
+            <div class="container">
+                <div class="header-page">
+                    <div class="beadcrumbs">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Vietcombank</a></li>
+                            <li class="breadcrumb-item"><a href="home-news.html">Tin tức & Sự kiện</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="#">Tìm kiếm tin tức</a></li>
+                            </ol>
+                        </nav>    
+                    </div>
+                    <div class="searchbox">
+                        <div class="input">
+                            <input type="text" placeholder="Tìm kiếm" />
+                        </div>
+                    </div>
+                </div>
+                <section class="content-post">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="header-single">
+                                <h1>TÌM KIẾM TIN TỨC VỚI TỪ KHÓA: Vietcombank</h1>
+                            </div>
+                            <div class="content-search">
+                                <article-search></article-search>
+                                <article-search></article-search>
+                                <article-search></article-search>
+                                <article-search></article-search>
+                                <article-search></article-search>
+                                <nav aria-label="navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item disabled">
+                                          <span class="page-link">Trước</span>
+                                        </li>
+                                        <li class="page-item active">
+                                          <span class="page-link">
+                                            1
+                                            <span class="sr-only">(current)</span>
+                                          </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                          <a class="page-link" href="#">Sau</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <ban-tin-hinh></ban-tin-hinh>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    
+        <myfooter></myfooter>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('vue_component/new/header.vue'),
+                'myfooter': httpVueLoader('vue_component/new/footer.vue'),
+                'article-search': httpVueLoader('vue_component/new/article-search.vue'),
+                'ban-tin-hinh': httpVueLoader('vue_component/new/sidebar-ban-tin-hinh.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
