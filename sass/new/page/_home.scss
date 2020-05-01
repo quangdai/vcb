@@ -935,6 +935,16 @@ section.thu-vien {
             left: 10px;
         }
     }
+    .gallery-tva .item {
+        position: relative;
+        .download {
+            position: absolute;
+            bottom: 10px;
+            width: 30px;
+            float: left;
+            margin-left: 10px;
+        }
+    }
 }
 #thumbs .owl-item {
     padding: 0 5px;
@@ -986,6 +996,8 @@ section.tva a.newsImage {
         border: none;
     }
 }
+
+
 
 @media(min-width: 1200px) {
 .container {
