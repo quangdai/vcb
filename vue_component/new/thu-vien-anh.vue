@@ -1,7 +1,7 @@
 <template>
     <section class="thu-vien-anh">
         <div class="title-section">
-            <h4><a href="#">Thư viện ảnh</a></h4>
+            <h4><a href="../thu-vien-anh.html">Thư viện ảnh</a></h4>
         </div>
         <div class="content-section">
             <div class="slider-tva owl-carousel">

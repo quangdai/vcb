@@ -15,7 +15,7 @@
             </ul>
         </div>
         <div class="read-more">
-            <a href="#">Xem thêm <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <a href="../danh-sach-dac-san.html">Xem thêm <i class="fa fa-caret-right" aria-hidden="true"></i></a>
         </div>
     </div>
 </template>
