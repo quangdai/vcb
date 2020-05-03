@@ -15453,21 +15453,21 @@ i.rotate {
 
 .header .menu-wrap .menu-item .menu-link {
   white-space: nowrap;
-  color: #414042;
-  font-weight: 600;
+  color: #000000;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: -1.5px;
   position: relative;
 }
 
 .header .menu-wrap .menu-item .menu-link .icon img {
   max-height: 20px;
-  margin-right: 16px;
+  margin-right: 5px;
 }
 
 .header .menu-wrap .menu-item .menu-link i {
-  margin-left: 18px;
+  margin-left: 8px;
 }
 
 .header .menu-wrap .menu-item .btn-toggle-menu {

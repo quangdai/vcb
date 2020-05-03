@@ -3,13 +3,16 @@
         <div class="top-bar">
             <div class="container top-bar-wrap">
                 <div class="left">
-                    <a href="tel:84 - 24 - 3824 8919" class="top-bar-phone">84 - 24 - 3824 8919</a>
+                    <a href="tel:84 - 24 - 3824 8919" class="top-bar-phone">
+                        <img src="images/icon-hotline.png" alt="">
+                        84 - 24 - 3824 8919
+                    </a>
                 </div>
                 <div class="right">
                     <span class="top-bar-time">
                         Thứ tư, 29/04/2020, 00:46 GMT+7 
                     </span>
-                    <a href="#">
+                    <a href="#" class="language">
                         <img src="images/ic_en.png" alt="">
                     </a>
                 </div>

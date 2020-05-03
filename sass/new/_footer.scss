@@ -1,0 +1,32 @@
+footer{
+    .menu-footer{
+        background: #005030;
+        .menu{
+            @extend .d-flex, .justify-content-center;
+            padding: 7px 0;
+            .menu-item{
+                &:not(:last-child()){
+                    border-right: 1px solid #6b6b6b;
+                }
+                .menu-link{
+                    display: block;
+                    background: #005030;
+                    padding: 0px 3.5px;
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .info{
+        @extend .d-flex;
+        padding: 36px 0px;
+        p{
+            margin-bottom: 0;
+            font-size: 13px;
+            color: #444;
+        }
+    }
+}
