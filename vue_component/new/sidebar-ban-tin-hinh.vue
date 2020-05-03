@@ -83,6 +83,9 @@
                         <a class="nav-item nav-link" id="video-3-tab" data-toggle="tab" href="#video-3" role="tab" aria-controls="video-3" aria-selected="false">
                             Bản tin hình số 58 <span>(13/04/2020)</span>
                         </a>
+                        <a class="nav-item nav-link" id="video-3-tab" data-toggle="tab" href="#video-3" role="tab" aria-controls="video-3" aria-selected="false">
+                            Bản tin hình số 58 <span>(13/04/2020)</span>
+                        </a>
                     </div> 
                 </div>   
             </div>

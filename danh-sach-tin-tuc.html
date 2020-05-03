@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tìm kiếm tin tức</title>
+    <title>Vietcombank</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
     <link rel="stylesheet" href="fonts/kuro/kuro.css">
     <link rel="stylesheet" href="css/style_new.css">
@@ -19,8 +19,8 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Vietcombank</a></li>
-                            <li class="breadcrumb-item"><a href="home-news.html">Tin tức & Sự kiện</a></li>
-                            <li class="breadcrumb-item active" aria-current="page"><a href="#">Tìm kiếm tin tức</a></li>
+                            <li class="breadcrumb-item"><a href="tin-tuc.html">Tin tức</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="#">Vietcombank</a></li>
                             </ol>
                         </nav>    
                     </div>
@@ -33,15 +33,26 @@
                 <section class="content-post">
                     <div class="row">
                         <div class="col-lg-8">
-                            <div class="header-single">
-                                <h1>TÌM KIẾM TIN TỨC VỚI TỪ KHÓA: Vietcombank</h1>
-                            </div>
-                            <div class="content-search clearfix">
-                                <article-search></article-search>
-                                <article-search></article-search>
-                                <article-search></article-search>
-                                <article-search></article-search>
-                                <article-search></article-search>
+                            <div class="content-list clearfix">
+                                <section class="box-news">
+                                    <boxnews></boxnews>
+                                </section>
+                                <section class="tin-tuc">
+                                    <div class="title-section">
+                                        <h4><a href="#">Vietcombank</a></h4>
+                                    </div>
+                                    <div class="content-section">
+                                        <article-search></article-search>
+                                        <article-search></article-search>
+                                        <article-search></article-search>
+                                        <article-search></article-search>
+                                        <article-search></article-search>
+                                        <article-search></article-search>
+                                        <article-search></article-search>
+                                        <article-search></article-search>
+                                        <article-search></article-search>
+                                    </div>
+                                </section>
                                 <nav aria-label="navigation">
                                     <ul class="pagination">
                                         <li class="page-item disabled">
@@ -64,6 +75,8 @@
                         </div>
                         <div class="col-lg-4">
                             <ban-tin-hinh></ban-tin-hinh>
+                            <sidebar-dacsan></sidebar-dacsan>
+                            <sidebar-ban-tin></sidebar-ban-tin>
                         </div>
                     </div>
                 </section>
@@ -82,8 +95,10 @@
             components: {
                 'myheader': httpVueLoader('vue_component/new/header.vue'),
                 'myfooter': httpVueLoader('vue_component/new/footer.vue'),
-                'article-search': httpVueLoader('vue_component/new/article-search.vue'),
                 'ban-tin-hinh': httpVueLoader('vue_component/new/sidebar-ban-tin-hinh.vue'),
+                'sidebar-dacsan': httpVueLoader('vue_component/new/sidebar-dacsan.vue'),
+                'sidebar-ban-tin': httpVueLoader('vue_component/new/sidebar-ban-tin.vue'),
+                'boxnews': httpVueLoader('vue_component/new/box-news.vue'),
             },
         });
     </script>

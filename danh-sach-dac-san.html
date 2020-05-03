@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tìm kiếm tin tức</title>
+    <title>Danh sách đặc san</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
     <link rel="stylesheet" href="fonts/kuro/kuro.css">
     <link rel="stylesheet" href="css/style_new.css">
@@ -19,8 +19,8 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Vietcombank</a></li>
-                            <li class="breadcrumb-item"><a href="home-news.html">Tin tức & Sự kiện</a></li>
-                            <li class="breadcrumb-item active" aria-current="page"><a href="#">Tìm kiếm tin tức</a></li>
+                            <li class="breadcrumb-item"><a href="tin-tuc.html">Tin tức</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="#">Danh sách đặc san</a></li>
                             </ol>
                         </nav>    
                     </div>
@@ -34,14 +34,14 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="header-single">
-                                <h1>TÌM KIẾM TIN TỨC VỚI TỪ KHÓA: Vietcombank</h1>
+                                <h1>ĐẶC SAN VIETCOMBANK</h1>
                             </div>
                             <div class="content-search clearfix">
-                                <article-search></article-search>
-                                <article-search></article-search>
-                                <article-search></article-search>
-                                <article-search></article-search>
-                                <article-search></article-search>
+                                <article-dacsan></article-dacsan>
+                                <article-dacsan></article-dacsan>
+                                <article-dacsan></article-dacsan>
+                                <article-dacsan></article-dacsan>
+                                <article-dacsan></article-dacsan>
                                 <nav aria-label="navigation">
                                     <ul class="pagination">
                                         <li class="page-item disabled">
@@ -82,7 +82,7 @@
             components: {
                 'myheader': httpVueLoader('vue_component/new/header.vue'),
                 'myfooter': httpVueLoader('vue_component/new/footer.vue'),
-                'article-search': httpVueLoader('vue_component/new/article-search.vue'),
+                'article-dacsan': httpVueLoader('vue_component/new/article-dacsan.vue'),
                 'ban-tin-hinh': httpVueLoader('vue_component/new/sidebar-ban-tin-hinh.vue'),
             },
         });

@@ -1,3 +1,21 @@
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 .home-news {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
@@ -385,7 +403,7 @@
     }
 }
 article {
-    clear: both;
+    float: left;
     width: 100%;
     border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
@@ -429,7 +447,9 @@ article {
     }    
 }
 nav .pagination  {
-    margin-bottom: 15px;
+    margin: 5px 0 15px;
+    float: left;
+    width: 100%;
     .page-item.active .page-link {
         z-index: 1;
         color: #fff;
@@ -455,7 +475,7 @@ nav .pagination  {
     height: 400px;
     overflow: hidden;
     .left {
-        width: 460px;
+        width: 66.66%;
         float: left;
         position: relative;
         display: inline-block;
@@ -509,11 +529,9 @@ nav .pagination  {
         }
     }
     .right {
-        width: 200px;
+        width: 33.33%;
         float: right;
-        margin-right: -15px;
-        height: 393px;
-        overflow-y: scroll;
+        padding-left: 15px;
         .head {
             background: url(../images/hotnews-border.png) no-repeat bottom left;
             padding-bottom: 8px;
@@ -554,15 +572,6 @@ nav .pagination  {
                 }
             }
             
-        }
-        ::-webkit-scrollbar {
-            -webkit-appearance: none;
-            width: 4px;
-        }
-        ::-webkit-scrollbar-thumb {
-            border-radius: 4px;
-            background-color: rgba(130, 130, 130, 0.75);
-            -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
         }
     }
 }
@@ -775,6 +784,221 @@ nav .pagination  {
 .home-news .content-news .media {
     display: none;
 }
+.content-news {
+    .first-news {
+        margin-top: 10px;
+        a.newsImage  {
+            width: 50% ;
+            margin-bottom: 5px;
+        }
+        .info-post {
+            float: initial;
+            width: 100%;
+            text-align: justify;
+            a {
+                color: #444;
+            }
+        }
+        
+    }
+    .other {
+        margin-top: 10px;
+    }
+}
+.content-list .title-section {
+    margin-bottom: 10px;
+}
+.box-news {
+    margin: 10px 0 0;
+    a.newsImage {
+        display: block;
+        width: 50%;
+        border: 1px solid #ccc;
+        padding: 2px;
+        background: #fff;
+        float: left;
+        margin-right: 20px;
+        img {
+            max-width: 100%;
+        }
+    }
+    .first-box {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        a {
+            text-decoration: none;
+            color: #026C3A;
+            font-size: 15px;
+            font-weight: bold;
+            i {
+                color: #999;
+                font-size: 12px;
+                font-weight: normal;
+            }
+        }
+        .description {
+            padding-top: 10px;
+            text-align: justify;
+            color: #444;
+        }
+    }
+    .other-box {
+        width: 100%;
+        float: left;
+        .row {
+            margin: 0 -8px;
+        }
+        .col-md-6 {
+            padding: 0 8px ;
+        }
+        a.newsImage {
+            margin-right: 10px;
+            width: 45%;
+        }
+        a {
+            text-decoration: none;
+            color: #026C3A;
+            font-size: 13px;
+            font-weight: bold;
+            i {
+                color: #999;
+                font-size: 12px;
+                font-weight: normal;
+            }
+        }
+        .description  {
+            display: none;
+        }
+    }
+    a , .title{
+        line-height: 18px;
+    }
+    a:hover {
+        color: #333;
+    }
+}
+
+// thu vien anh
+section.thu-vien {
+    .owl-carousel {    
+        img {
+            margin: 0px auto;
+            max-width: 650px;
+            max-height: 430px;
+        }
+        .owl-nav button {
+            text-decoration: none;
+            display: block;
+            margin: -20px 0 0;
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            overflow: hidden;
+            opacity: 0;
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.8);
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            font-size: 40px;
+            background: none;
+            border: none;
+        }
+        .owl-nav button.owl-next {
+            right: -50px;
+        }
+        .owl-nav button.owl-prev {
+            left: -50px;
+        }
+        .owl-nav button:focus {
+            outline: none;
+        }
+        .owl-nav button:hover {
+            color: #000;
+        }
+    }
+    .owl-carousel:hover {
+        .owl-nav button  {
+            opacity: 1;
+            background: none;
+            border: none;
+        }
+        .owl-nav button.owl-next {
+            right: 10px;
+        }
+        .owl-nav button.owl-prev {
+            left: 10px;
+        }
+    }
+    .gallery-tva .item {
+        position: relative;
+        .download {
+            position: absolute;
+            bottom: 10px;
+            width: 30px;
+            float: left;
+            margin-left: 10px;
+        }
+    }
+}
+#thumbs .owl-item {
+    padding: 0 5px;
+}
+main img {
+    max-width: 100%;
+}
+section.tva a.newsImage {
+    display: block;
+    border: 1px solid #ccc;
+    padding: 1px;
+    background: #fff;
+    float: left;
+    margin-right: 8px;
+}
+.xem-nhieu {
+    margin: 10px 0;
+    height: 400px;
+    overflow-y: scroll;
+    img {
+        display: block;
+        width: 125px;
+        border: 1px solid #ccc;
+        padding: 1px;
+        background: #fff;
+        float: left;
+        margin-right: 8px;
+    }
+    .item-image {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid #ddd;
+        padding: 5px 5px 5px 0px;
+        h4 {
+            text-decoration: none;
+            color: #444;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        h4:hover {
+            color: #005030;
+        }
+        span {
+            color: #999;
+            font-size: 12px;
+        }
+    }
+    .item-image:last-child {
+        border: none;
+    }
+}
+
+
 
 @media(min-width: 1200px) {
 .container {
@@ -818,6 +1042,13 @@ main .row {
     height: 400px;
 }
 
+}
+@media(max-width:991px) {
+.xem-nhieu {
+    height: auto;
+    overflow-y: initial;
+
+}
 }
 @media(max-width: 800px) {
 main .row .col-md-8, main .row .col-md-4 {
@@ -876,6 +1107,37 @@ article {
 }
 .right-news .social-video img {
     display: block;
+}
+section.content-post .col-lg-8 {
+    margin-bottom: 10px;
+}
+.right-news .xem-nhieu img {
+    display: block;
+}
+
+
+}
+@media(max-width:767px) {
+.box-news .other-box {
+    a.newsImage {
+        margin-right: 10px;
+        width: 50%;
+    }
+    .description {
+        display: block;
+    }
+    .col-md-6 .inner-col {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        float: left;
+    }
+    .col-md-6:last-child .inner-col{
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 }
 
 }
@@ -980,6 +1242,37 @@ main .ct-related-video .row .col-md-8, main .ct-related-video .row .col-md-4 {
 .container {
     padding-right: 10px;
     padding-left: 10px;
+}
+.content-news .first-news a.newsImage {
+    width: 100%;
+}
+.box-news .other-box a.newsImage ,.box-news  a.newsImage {
+    width: 40%;
+}
+section.thu-vien .owl-carousel .owl-nav button {
+    font-size: 16px;
+    overflow: initial;
+    z-index: 9999;
+    opacity: 1;
+    background: rgba(255,255,255,.5);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.thu-vien .owl-carousel .owl-nav button:hover {
+    background: rgba(255,255,255,.9);
+}
+section.thu-vien .owl-carousel .owl-nav button.owl-prev {
+    left: 3px;
+}
+section.thu-vien .owl-carousel .owl-nav button.owl-next {
+    right: 3px;
+}
+#thumbs .owl-stage-outer {
+    margin: 0 -5px;
 }
 
 }
