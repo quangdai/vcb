@@ -1,0 +1,16 @@
+.single-news, .news-site{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;    
+}
+
+.sidebar-news{
+    padding-left: 10px;
+    border-left: 2px solid #e9eaea;
+    height: 100%;
+}
+@media(max-width: 991px){
+    .sidebar-news{
+        padding-left: 0px;
+        border-left: 0px solid #e9eaea;
+    }
+}

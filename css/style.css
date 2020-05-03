@@ -14911,7 +14911,7 @@ textarea {
 
 body {
   background: #f4f4f4;
-  font-family: 'Kuro';
+  font-family: Arial, Tahoma, Veranda;
   font-weight: normal;
   font-size: 14px;
   overflow-x: hidden;
@@ -15278,9 +15278,8 @@ i.rotate {
 }
 
 .header .top-bar .link-top li a {
-  font-size: 15px;
-  font-weight: 600;
-  color: #58595b;
+  font-size: 16px;
+  color: #333;
   position: relative;
 }
 
@@ -15348,7 +15347,7 @@ i.rotate {
 }
 
 .header .header-main .logo img {
-  max-width: 175px;
+  max-width: 190px;
 }
 
 .header .header-main .hot-line {

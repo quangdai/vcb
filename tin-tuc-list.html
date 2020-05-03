@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="fonts/kuro/kuro.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style_new.css">
+</head>
+<body class="home-news">
+    <div id="app" class="news-site">
+        <myheader></myheader>
+    
+        <main class="clearfix"> 
+            <div class="container">
+                <div class="header-page">
+                    <div class="beadcrumbs">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Vietcombank</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="#">Tin tức</a></li>
+                            </ol>
+                        </nav>    
+                    </div>
+                    <div class="searchbox">
+                        <div class="input">
+                            <input type="text" placeholder="Tìm kiếm" />
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-news">
+                    <div class="row">
+                        <div class="col-lg-8 pr-lg-0">
+                            <div class="top-list-new">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="top-list-new-item big-item">
+                                            <a href="#" class="newsImage">
+                                                <img src="images/VCB THONG BAO.jpg" alt="">
+                                            </a>
+                                            <div class="emtry-content">
+                                                <p class="title">
+                                                    <a href="#">Vietcombank thông báo về thời gian nghỉ giao dịch trong dịp Lễ kỷ niệm Ngày chiến thắng 30/04 và Quốc tế Lao động 1/5</a>
+                                                </p>
+                                                <p class="time">(28/04/2020 01:46 CH)</p>
+                                                <div class="des">
+                                                    Vietcombank nghỉ giao dịch 2 ngày trong dịp Lễ kỷ niệm Ngày chiến thắng 30/04 và Quốc tế Lao động 1/5.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="top-list-new-item">
+                                            <a href="#" class="newsImage">
+                                                <img src="images/VCB THONG BAO.jpg" alt="">
+                                            </a>
+                                            <div class="emtry-content">
+                                                <p class="title">
+                                                    <a href="#">Vietcombank thông báo về thời gian nghỉ giao dịch trong dịp Lễ kỷ niệm Ngày chiến thắng 30/04 và Quốc tế Lao động 1/5</a>
+                                                </p>
+                                                <p class="time">(28/04/2020 01:46 CH)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="top-list-new-item">
+                                            <a href="#" class="newsImage">
+                                                <img src="images/VCB THONG BAO.jpg" alt="">
+                                            </a>
+                                            <div class="emtry-content">
+                                                <p class="title">
+                                                    <a href="#">Vietcombank thông báo về thời gian nghỉ giao dịch trong dịp Lễ kỷ niệm Ngày chiến thắng 30/04 và Quốc tế Lao động 1/5</a>
+                                                </p>
+                                                <p class="time">(28/04/2020 01:46 CH)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title-section">
+                                <h4>
+                                    <a href="#">VIETCOMBANK</a>
+                                </h4>
+                            </div>
+                            <div class="list-article pt-3">
+                                <article-search></article-search>
+                                <article-search></article-search>
+                                <article-search></article-search>
+                                <article-search></article-search>
+                                <article-search></article-search>
+                                <nav aria-label="navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item disabled">
+                                          <span class="page-link">Trước</span>
+                                        </li>
+                                        <li class="page-item active">
+                                          <span class="page-link">
+                                            1
+                                            <span class="sr-only">(current)</span>
+                                          </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                          <a class="page-link" href="#">Sau</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="sidebar-news">
+                                <ban-tin-hinh></ban-tin-hinh>
+                                <ban-tin-hinh></ban-tin-hinh>
+                                <sidebar-dacsan></sidebar-dacsan>
+                                <sidebar-ban-tin></sidebar-ban-tin>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <myfooter></myfooter>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    
+    <script>
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'myheader': httpVueLoader('vue_component/new/header.vue'),
+                'myfooter': httpVueLoader('vue_component/new/footer.vue'),
+                'news': httpVueLoader('vue_component/new/news.vue'),
+                'article-search': httpVueLoader('vue_component/new/article-search.vue'),
+                'sidebar-dacsan': httpVueLoader('vue_component/new/sidebar-dacsan.vue'),
+                'sidebar-ban-tin': httpVueLoader('vue_component/new/sidebar-ban-tin.vue'),
+                'ban-tin-hinh': httpVueLoader('vue_component/new/sidebar-ban-tin-hinh.vue'),
+                'thu-vien-anh': httpVueLoader('vue_component/new/thu-vien-anh.vue'),
+            },
+        });
+    </script>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/main-news.js"></script>
+    
+</body>
+</html>

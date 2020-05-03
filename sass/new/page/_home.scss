@@ -296,6 +296,7 @@
     border-bottom: 1px solid #ddd;
     padding-top: 6px;
     margin-bottom: 8px;
+    font-family: 'Kuro';
     h1 {
         font-size: 20px;
         font-weight: bold;
@@ -304,6 +305,11 @@
         margin: 0;
     }
     .meta-single {
+        font-size: 12px;
+        color: #888;
+        width: 250px;
+        padding-top: 5px;
+
         display: inline-block;
         clear: both;
         width: 100%;
@@ -583,9 +589,6 @@ nav .pagination {
     }
 }
 .media {
-    padding: 0px 0px 0px 10px;
-    border-left: 2px solid #e9eaea;
-    height: 100%;
     .box-video-right {
         width: 100%;
     }
@@ -1033,6 +1036,7 @@ section.tva a.newsImage {
     .header-single h1 {
         font-size: 18px;
         line-height: 26px;
+        font-family: 'Kuro';
     }
 }
 
