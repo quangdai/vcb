@@ -196,3 +196,19 @@ $(window).bind("load", function() {
 });
  
 // Js lightgallery
+
+
+$(window).bind("load", function() {
+    $('.overlay-mobile').click(function(){
+        $(this).hide(100);
+        $('.menu-wrap .menu').removeClass('active');
+    });
+    $('.bar-menu-mobile').click(function(){
+        $('.menu-wrap .menu').addClass('active');
+        $('.overlay-mobile').show(200);
+    });
+    
+    $('.go-to-top').click(function(){
+        $("html, body").animate({scrollTop: 0}, 1000);
+    });
+});

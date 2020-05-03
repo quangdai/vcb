@@ -26,6 +26,14 @@
                     </a>
                 </div>
                 <nav class="menu-wrap">
+                    <div class="home-mobile d-flex d-xl-none">
+                        <a href="#" class="menu-link">
+                            <img src="images/ic_home.png" alt="">
+                        </a>
+                        <a href="javasctipt:;" class="bar-menu-mobile">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
                     <ul class="menu">
                         <li class="menu-item">
                             <a href="#" class="menu-link">
@@ -78,6 +86,7 @@
                             </a>
                         </li>
                     </ul>
+                    <a href="javasctipt:;" class="overlay-mobile"></a>
                 </nav>
             </div>
         </div>

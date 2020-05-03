@@ -35,9 +35,9 @@
         }
     }
     .menu-wrap{
+        background: #005030;
         .menu{
-            @extend .d-flex;
-            background: #005030;
+            @extend .d-xl-flex, .flex-xl-row, .flex-column;
             padding-left: 0;
             .menu-item{
                 .menu-link{
@@ -62,6 +62,73 @@
                     }
                 }
             }
+        }
+    }
+}
+@media(max-width: 1199px){
+    .header-main{
+        .menu-wrap{
+            padding: 10px;
+            .menu{
+                position: fixed;
+                background: #005030;
+                left: 0;
+                bottom: 0;
+                top: 0;
+                right: 0;
+                z-index: 9991;
+                padding: 20px;
+                width: 270px;
+                transform: translateX(-300%);
+                opacity: 0;
+                transition: 0.3s all;
+                &.active{
+                    display: -webkit-box !important;
+                    display: -ms-flexbox !important;
+                    display: flex !important;
+                    transform: translateX(0%);
+                    opacity: 1;
+                    transition: 0.3s all;
+                }
+            }
+
+            .bar-menu-mobile{
+                margin-left: auto;
+                color: #fff;
+                padding: 5px 8px;
+            }
+        }
+        .overlay-mobile{
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            &::before{
+                content: "Đóng";
+                left: 275px;
+                position: relative;
+                color: #fff;
+                font-size: 16px;
+                top: 10px;
+            }
+        }
+    }
+    .header-main .menu-wrap .menu .menu-item:not(:first-child)::before{
+        display: none;
+    }
+}
+
+@media(max-width: 575px){
+    .top-bar .top-bar-wrap .right .top-bar-time{
+        display: none;
+    }
+    .header-main{
+        .container{
+            padding: 0;
         }
     }
 }
