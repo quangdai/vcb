@@ -47,7 +47,7 @@ i.rotate{
         }
         .right{
             @extend .d-flex;
-            margin-left: 100px;
+            margin-left: 10px;
             .form-search{
                 background-color: #fff;
                 border-radius: 4px;
@@ -234,7 +234,7 @@ i.rotate{
             padding-left: 0;
             @extend .d-xl-flex, .justify-content-around;
             .menu-mega-item{
-                @include col-w(80px);
+                @include col-w(100px);
                 .link{
                     text-align: center;
                     position: relative;
@@ -242,10 +242,9 @@ i.rotate{
                     z-index: 12;
                     @extend .d-xl-flex, .flex-column, .justify-content-center, .align-items-center;
                     img{
+                        @include col-w(43px);
+                        height: 50px;
                         display: inline-block;
-                        -webkit-box-flex: 0;
-                        -ms-flex: 0 0 60px;
-                        flex: 0 0 60px;
                         object-fit: scale-down;
                         margin-bottom: 8px;
                         transition: 0.2s all;

@@ -15302,7 +15302,7 @@ i.rotate {
 }
 
 .header .top-bar .right {
-  margin-left: 100px;
+  margin-left: 10px;
 }
 
 .header .top-bar .right .form-search {
@@ -15512,9 +15512,9 @@ i.rotate {
 
 .header .mega-menu .main-menu-mega .menu-mega-item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 80px;
-  flex: 0 0 80px;
-  max-width: 80px;
+  -ms-flex: 0 0 100px;
+  flex: 0 0 100px;
+  max-width: 100px;
 }
 
 .header .mega-menu .main-menu-mega .menu-mega-item .link {
@@ -15525,10 +15525,12 @@ i.rotate {
 }
 
 .header .mega-menu .main-menu-mega .menu-mega-item .link img {
-  display: inline-block;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 60px;
-  flex: 0 0 60px;
+  -ms-flex: 0 0 43px;
+  flex: 0 0 43px;
+  max-width: 43px;
+  height: 50px;
+  display: inline-block;
   -o-object-fit: scale-down;
      object-fit: scale-down;
   margin-bottom: 8px;
@@ -16196,11 +16198,6 @@ button:focus {
   outline: none;
 }
 
-main {
-  font-family: 'Kuro';
-  letter-spacing: -1px;
-}
-
 main section {
   margin-bottom: 20px;
   width: 100%;
@@ -16230,7 +16227,6 @@ main section {
   max-height: 300px;
   padding: 35px 20px;
   max-width: 505px;
-  font-family: 'Kuro';
 }
 
 .slider .inner-slider .item .text-slider h2 {
@@ -16285,7 +16281,6 @@ main section {
   min-height: 180px;
   background-color: #d1e6b6;
   border-radius: 5px;
-  font-family: 'Kuro';
   margin-top: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16306,7 +16301,6 @@ main section {
   font-size: 20px;
   margin-bottom: 5px;
   letter-spacing: -1px;
-  font-weight: 600;
 }
 
 .login-ibanking h3 span {
@@ -16375,7 +16369,6 @@ section.news-home .row .item-blog .title {
   margin: 0;
   color: #404041;
   list-style: disc;
-  font-weight: 600;
   line-height: normal;
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -16406,8 +16399,8 @@ section.news-home .row .read-more a:hover {
 
 .nav-tabs .nav-item {
   background: #fff;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   color: #404041 !important;
   border: 1px solid #6D6E70;
   border-radius: 8px 8px 0 0;
@@ -16440,6 +16433,9 @@ section.ty-gia #gia-tab .nav-item {
   width: auto;
   padding: 6px 12px 5px;
   height: 35px;
+  font-weight: normal;
+  font-size: 15px;
+  border-bottom: 0;
 }
 
 section.ty-gia .tab-pane {
@@ -16461,9 +16457,11 @@ section.ty-gia .tab-pane ul li {
 
 section.ty-gia .tab-pane ul li span {
   color: #144733;
-  font-weight: bold;
-  margin-left: 8px;
   font-family: Arial;
+}
+
+section.ty-gia .tab-pane ul li .color-81BC41 {
+  color: #81BC41;
 }
 
 section.ty-gia table.table-tygia {
@@ -16867,7 +16865,6 @@ article .excerpt {
   max-height: 300px;
   padding: 35px 20px;
   max-width: 505px;
-  font-family: 'Kuro';
 }
 
 .inner-banner .item .text-slider h2 {
@@ -17836,7 +17833,7 @@ footer .ft-control .expand-footer.active i {
 
 footer .footer-link .footer-link-title {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: bold;
   color: #fff;
   text-transform: uppercase;
 }
